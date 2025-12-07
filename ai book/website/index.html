@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Physical AI & Humanoid Robotics</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="A premium learning experience for Physical AI and Humanoid Robotics.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <!-- Theme: Custom Futuristic -->
+  <style>
+    /* Import Google Fonts */
+    @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400&family=Space+Grotesk:wght@400;700&display=swap');
+
+    :root {
+      --theme-color: #00f5c3; /* Bright Mint */
+      --primary-text: #e6f1ff; /* Light Steel Blue */
+      --secondary-text: #a8b2d1; /* Slate */
+      --background-primary: #0a192f; /* Navy */
+      --background-secondary: #112240; /* Lighter Navy */
+      --background-tertiary: #233554;
+      --border-color: #00f5c3;
+      --link-color: #00f5c3;
+      --link-hover-color: #64ffda;
+      --font-sans: 'Space Grotesk', sans-serif;
+      --font-mono: 'Roboto Mono', monospace;
+    }
+
+    /* Base Styles */
+    body {
+      background-color: var(--background-primary);
+      color: var(--secondary-text);
+      font-family: var(--font-sans);
+      line-height: 1.6;
+    }
+
+    /* Content Area */
+    .content {
+      background-color: var(--background-primary);
+      padding: 2rem;
+    }
+
+    /* Typography */
+    h1, h2, h3, h4, h5, h6 {
+      font-family: var(--font-sans);
+      font-weight: 700;
+      color: var(--primary-text);
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+      letter-spacing: 0.5px;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      border-bottom: 1px solid var(--background-tertiary);
+      padding-bottom: 0.5rem;
+    }
+
+    h2 {
+      font-size: 2em;
+    }
+
+    p {
+      margin-bottom: 1rem;
+    }
+
+    a {
+      color: var(--link-color);
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    a:hover {
+      color: var(--link-hover-color);
+      text-decoration: underline;
+    }
+
+    strong {
+      color: var(--primary-text);
+    }
+    
+    /* Code Blocks */
+    pre, code {
+        font-family: var(--font-mono);
+        background-color: var(--background-secondary);
+        border-radius: 4px;
+    }
+
+    pre {
+        border-left: 3px solid var(--theme-color);
+        padding: 1rem;
+        overflow-x: auto;
+    }
+    
+    code {
+        padding: 0.2em 0.4em;
+    }
+
+    /* Blockquotes */
+    blockquote {
+      border-left: 3px solid var(--theme-color);
+      margin-left: 0;
+      padding-left: 1.5rem;
+      color: var(--secondary-text);
+      font-style: italic;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      background-color: var(--background-secondary);
+      border-right: 1px solid var(--background-tertiary);
+      padding-top: 20px;
+    }
+    
+    .sidebar-nav > ul > li > a {
+        font-family: var(--font-sans);
+        font-size: 1em;
+        font-weight: 400;
+        color: var(--secondary-text);
+        transition: all 0.2s ease;
+        padding: 10px 20px;
+        border-left: 3px solid transparent;
+    }
+
+    .sidebar-nav > ul > li > a:hover {
+      color: var(--theme-color);
+      background-color: rgba(0, 245, 195, 0.05);
+    }
+
+    .sidebar-nav > ul > li > a.active {
+      color: var(--theme-color);
+      font-weight: 700;
+      border-left: 3px solid var(--theme-color);
+      background-color: rgba(0, 245, 195, 0.1);
+    }
+
+    /* App Name in Sidebar */
+    .app-name-link {
+        font-family: var(--font-sans);
+        font-weight: 700;
+        font-size: 1.5em;
+        color: var(--primary-text) !important;
+        text-align: center;
+        padding: 20px;
+    }
+
+    /* Search Box */
+    .search input {
+        font-family: var(--font-sans);
+        background-color: var(--background-primary);
+        color: var(--primary-text);
+        border: 1px solid var(--background-tertiary);
+        border-radius: 5px;
+    }
+    .search input:focus {
+        border-color: var(--theme-color);
+    }
+
+    /* Content animation */
+    .content {
+      animation: fadeIn 0.5s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(10px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+  </style>
+
+</head>
+<body>
+  <div id="app"></div>
+  <script>
+    window.$docsify = {
+      name: 'Physical AI & Humanoid Robotics',
+      repo: '',
+      loadSidebar: true,
+      subMaxLevel: 2,
+      alias: {
+        '/.*/_sidebar.md': '/_sidebar.md'
+      },
+      auto2top: true,
+      homepage: 'index.md'
+    }
+  </script>
+  <!-- Docsify v4 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+</body>
+</html>
